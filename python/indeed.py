@@ -6,6 +6,7 @@ import sys
 import time
 from filter_words import filter_words
 
+
 job_array = []
 
 def indeed(job_title, filterwords, location="netherlands"):
@@ -88,10 +89,10 @@ def indeed_load_all_jobs(job_title, filterwords, location):
         job_elements = indeed_extract_jobs(jobs)
         iterate_jobs(job_elements, filterwords)
         index += 10
-        time.sleep(0.1)
+        time.sleep(0.5)
         sys.stdout.write(next(spinner))
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(0.5)
         sys.stdout.write('\b')
 
         if len(job_elements) != 15:

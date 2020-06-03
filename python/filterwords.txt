@@ -48,3 +48,7 @@ servicemonteur
 mechatronics
 cloud
 operator
+electronica
+docent
+internship
+detachering
